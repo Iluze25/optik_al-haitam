@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Optik AlHaitam - Website edukasi kesehatan mata, lensa dan kacamata.">
+<title>Optik AlHaitam | Edukasi Kesehatan Mata</title>
+<style>
+:root{
+  --navy:#173b4d;
+  --blue:#315b6b;
+  --cream:#f3ead8;
+  --paper:#fbf7ee;
+  --gold:#b18a4a;
+  --ink:#263238;
+  --muted:#65747b;
+  --white:#fffdf8;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper);line-height:1.65}
+nav{position:sticky;top:0;z-index:20;background:rgba(23,59,77,.97);color:white;padding:13px 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0002}
+.brand{font-weight:bold;font-size:20px;letter-spacing:.5px}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{min-height:570px;padding:70px 7%;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;background:
+radial-gradient(circle at 80% 20%,#d7c19a66,transparent 30%),
+linear-gradient(135deg,#173b4d 0%,#315b6b 62%,#476f79 100%);color:white}
+.badge{display:inline-block;border:1px solid #d7c19a;border-radius:30px;padding:6px 14px;color:#f4dfb6;font-size:13px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.05;margin:20px 0 14px}
+.hero p{font-size:18px;max-width:650px;color:#edf2f0}
+.btn{display:inline-block;background:var(--gold);color:white;padding:13px 22px;border-radius:7px;text-decoration:none;margin:10px 8px 0 0;font-weight:bold}
+.btn.alt{background:transparent;border:1px solid #d8c69e}
+.illustration{height:360px;border:1px solid #d7c19a99;border-radius:50% 50% 46% 46%;display:flex;align-items:center;justify-content:center;background:#ffffff0d;box-shadow:inset 0 0 60px #0002}
+.glasses{font-size:110px;filter:drop-shadow(0 8px 10px #0004)}
+section{padding:72px 7%}
+.section-title{text-align:center;max-width:720px;margin:0 auto 40px}
+.section-title h2{font-size:38px;color:var(--navy);margin:0 0 8px}
+.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--white);padding:25px;border:1px solid #d9ccb4;border-radius:12px;box-shadow:0 5px 18px #243b4210}
+.icon{font-size:36px}
+.card h3{color:var(--navy);margin:10px 0 6px}
+.card p{color:#56656b;margin-top:5px}
+.band{background:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{padding:22px;background:#fffdf9;border-top:4px solid var(--gold);border-radius:8px}
+.num{font-size:28px;color:var(--gold);font-weight:bold}
+.quote{background:var(--navy);color:white;text-align:center;padding:65px 8%}
+.quote h2{font-size:34px;margin:0 auto 12px}
+.quote p{color:#e5eceb;max-width:750px;margin:auto}
+footer{background:#102d3a;color:#dce5e5;padding:40px 7%;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer strong{color:#f1d7a0}
+footer a{color:#f1d7a0;text-decoration:none}
+.floating{position:fixed;right:18px;bottom:18px;background:#2f7d55;color:white;text-decoration:none;padding:13px 17px;border-radius:50px;font-family:Arial,sans-serif;font-weight:bold;box-shadow:0 5px 18px #0004;z-index:30}
+@media(max-width:800px){
+ nav{padding:12px 5%} nav .links{display:none}
+ .hero{grid-template-columns:1fr;text-align:center;padding:55px 6%}
+ .hero p{margin-left:auto;margin-right:auto}.illustration{height:230px}
+ .cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+ section{padding:55px 6%}
+}
+@media(max-width:480px){.steps{grid-template-columns:1fr}h1{font-size:48px}.section-title h2{font-size:31px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">OPTIK ALHAITAM</div>
+  <div class="links">
+    <a href="#edukasi">Edukasi</a>
+    <a href="#gangguan">Gangguan Mata</a>
+    <a href="#tips">Tips</a>
+    <a href="#konsultasi">Konsultasi</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <span class="badge">Pusat Edukasi Kesehatan Mata</span>
+    <h1>Kenali Mata.<br>Jaga Penglihatan.</h1>
+    <p>Informasi sederhana dan mudah dipahami tentang kesehatan mata, gangguan penglihatan, lensa, serta kebiasaan baik untuk menjaga penglihatan.</p>
+    <a class="btn" href="#edukasi">Mulai Belajar</a>
+    <a class="btn alt" href="#konsultasi">Konsultasi</a>
+  </div>
+  <div class="illustration" aria-label="Ilustrasi kacamata">
+    <div class="glasses">👓</div>
+  </div>
+</header>
+
+<section id="edukasi">
+  <div class="section-title">
+    <h2>Edukasi Mata</h2>
+    <p>Memahami kondisi penglihatan adalah langkah awal untuk merawat mata dengan lebih baik.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><div class="icon">👁️</div><h3>Rabun Jauh</h3><p>Benda yang jauh terlihat kurang jelas. Kondisi ini sering dibantu dengan lensa minus sesuai kebutuhan penglihatan.</p></article>
+    <article class="card"><div class="icon">🔎</div><h3>Rabun Dekat</h3><p>Kesulitan melihat objek dekat dapat terjadi karena kemampuan fokus mata berkurang.</p></article>
+    <article class="card"><div class="icon">◉</div><h3>Mata Silinder</h3><p>Penglihatan dapat terasa buram atau berbayang karena bentuk kornea atau lensa mata tidak sepenuhnya simetris.</p></article>
+    <article class="card"><div class="icon">📖</div><h3>Presbiopia</h3><p>Umumnya berkaitan dengan bertambahnya usia dan membuat membaca pada jarak dekat menjadi lebih sulit.</p></article>
+    <article class="card"><div class="icon">💻</div><h3>Mata Lelah</h3><p>Menatap layar terlalu lama dapat membuat mata terasa lelah, kering, atau tidak nyaman.</p></article>
+    <article class="card"><div class="icon">🕶️</div><h3>Lensa Kacamata</h3><p>Pilihan lensa sebaiknya disesuaikan dengan kebutuhan penglihatan, aktivitas, kenyamanan, dan hasil pemeriksaan.</p></article>
+  </div>
+</section>
+
+<section class="band" id="gangguan">
+  <div class="section-title">
+    <h2>Kapan Sebaiknya Memeriksakan Mata?</h2>
+    <p>Jangan abaikan perubahan penglihatan yang mengganggu aktivitas sehari-hari.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><b>Penglihatan buram</b><br>Jarak jauh atau dekat mulai sulit terlihat jelas.</div>
+    <div class="step"><div class="num">02</div><b>Sering menyipitkan mata</b><br>Terutama saat membaca atau melihat objek jauh.</div>
+    <div class="step"><div class="num">03</div><b>Sakit kepala setelah melihat</b><br>Keluhan berulang saat membaca atau menggunakan layar.</div>
+    <div class="step"><div class="num">04</div><b>Perubahan penglihatan</b><br>Segera cari bantuan profesional bila terjadi perubahan mendadak.</div>
+  </div>
+</section>
+
+<section id="tips">
+  <div class="section-title">
+    <h2>Kebiasaan Baik untuk Mata</h2>
+    <p>Perawatan sederhana yang dapat membantu menjaga kenyamanan mata.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><h3>Istirahat dari layar</h3><p>Gunakan jeda berkala saat bekerja atau belajar di depan layar.</p></article>
+    <article class="card"><h3>Pencahayaan yang nyaman</h3><p>Pastikan ruangan dan posisi layar memiliki pencahayaan yang cukup.</p></article>
+    <article class="card"><h3>Jaga kebersihan</h3><p>Hindari menyentuh atau menggosok mata dengan tangan yang kotor.</p></article>
+  </div>
+</section>
+
+<div class="quote" id="konsultasi">
+  <h2>Masih bingung dengan kondisi penglihatan Anda?</h2>
+  <p>Konsultasikan pertanyaan seputar kesehatan mata dan kebutuhan kacamata bersama Optik AlHaitam.</p>
+  <a class="btn" href="https://wa.me/6289530052164" target="_blank" rel="noopener">Chat WhatsApp</a>
+</div>
+
+<footer>
+  <div><strong>OPTIK ALHAITAM</strong><br>Pusat edukasi dan informasi kesehatan mata.</div>
+  <div>WhatsApp: <a href="https://wa.me/6289530052164">0895 3005 2164</a><br><small>Informasi di website bersifat edukasi dan bukan pengganti diagnosis tenaga kesehatan.</small></div>
+</footer>
+
+<a class="floating" href="https://wa.me/6289530052164" target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>
